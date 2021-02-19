@@ -75,7 +75,7 @@ export const CardWrapper = styled.div`
   padding: 2rem 0;
 `;
 export const Card = styled.div`
-  width: 320px;
+  width: 330px;
   background-color: #fff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
   border-radius: 4px;

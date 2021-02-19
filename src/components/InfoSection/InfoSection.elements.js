@@ -35,6 +35,7 @@ export const TextWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
+    padding-top: 30px;
   }
 `;
 
@@ -54,6 +55,10 @@ export const Heading = styled.h1`
   line-height: 56px;
   color: ${({ lightText }) => (lightText ? "#fff" : "#127ECB")};
   max-width: ${({ sectionHeading }) => (sectionHeading ? "65%" : "")};
+
+  @media screen and (max-width: 425px) {
+    max-width: ${({ sectionHeading }) => (sectionHeading ? "100%" : "")};
+  }
 `;
 
 export const Subtitle = styled.p`

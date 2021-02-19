@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Button, Container, NavLogo } from "../../GlobalStyles";
 
-import { FaTimes, FaBars } from "react-icons/fa";
+import CloseMenuIcon from "../../img/menuCloseIconWhite.svg";
+import MenuIcon from "../../img/menuIconWhite.svg";
 import { StyledHeader } from "./Header";
 
 // import { IconContext } from "react-icons/lib"; // Basically took advantage of the IconContext by subscribing to the Provider
@@ -121,6 +122,7 @@ export const NavButtonWrapper = styled.div`
   display: flex;
   @media screen and (max-width: 768px) {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -156,11 +158,10 @@ export const NavButtonLink = styled(Link)`
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* height: 120px; */
   }
 `;
 
-const Navbar = ({ lightTextDesc, lightBg }) => {
+const Navbar = ({ lightBg }) => {
   const [click, setClick] = useState(false); // create state for clicks on the navbar (initial value = false)
   const [button, setButton] = useState(true); // create state for buttons on the navbar (initial value = true) including the hamburger and styling
 
@@ -243,7 +244,13 @@ const Navbar = ({ lightTextDesc, lightBg }) => {
             <MobileIcon onClick={handleClick}>
               {" "}
               {/* Use the handleClick method to toggle between the hamburger & close icons */}
-              {click ? <FaTimes /> : <FaBars />}
+              {click ? (
+                <img src={CloseMenuIcon} alt=""
+                width="20px" />
+              ) : (
+                <img src={MenuIcon} alt=""
+                width="23px" />
+              )}
             </MobileIcon>
           </StyledNav>
         </Container>

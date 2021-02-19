@@ -32,6 +32,20 @@ p {
   font-family: 'PT Sans', sans-serif;
   text-rendering: optimizeSpeed;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+// ::-webkit-scrollbar-track {
+//   // border-radius: 20px;
+// }
+
+::-webkit-scrollbar-thumb {
+  // background: $alt-navigation-color;
+  background: rgb(8, 121, 201, 0.96);
+  margin: 3px;
+}
 `;
 
 export const Container = styled.div`

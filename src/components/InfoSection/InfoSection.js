@@ -22,28 +22,34 @@ const InfoSection = ({
   playImg,
   AppstoreImg,
   centerText,
-  sectionHeading
+  sectionHeading,
 }) => {
   return (
     <>
-      <StyledSection >
+      <StyledSection>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
               <TextWrapper>
                 {/* TopLine is a short section description */}
-                <Heading lightText={lightText} centerText={centerText} sectionHeading={sectionHeading}>
+                <Heading
+                  lightText={lightText}
+                  centerText={centerText}
+                  sectionHeading={sectionHeading}
+                >
                   {headline}
                 </Heading>
                 {/* headingImg is a temporary replacement for the Heading text. The font used is unavailable for free */}
                 {/* <Img src={headingImg} alt={alt} marginBottom /> */}
                 <Subtitle lightText={lightText}>{description}</Subtitle>
-                <Button noPad spaceMargin noOutline>
-                  <Img src={playImg} alt={alt} />
-                </Button>
-                <Button noPad spaceMargin noOutline>
-                  <Img src={AppstoreImg} alt={alt} />
-                </Button>
+                <div style={{display: "flex", maxWidth: "300px"}}>
+                  <Button noPad spaceMargin noOutline>
+                    <Img src={playImg} alt={alt} />
+                  </Button>
+                  <Button noPad spaceMargin noOutline>
+                    <Img src={AppstoreImg} alt={alt} />
+                  </Button>
+                </div>
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>

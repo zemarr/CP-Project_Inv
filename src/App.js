@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import Counter from "./components/Counter/Counter";
 import Header from "./components/Navbar/Navbar";
-import GlobalStyle from "./GlobslStyles";
+import GlobalStyle from "./GlobalStyles";
 import LandingPage from "./Pages/LandingPage/LandingPage";
 
 const App = () => {

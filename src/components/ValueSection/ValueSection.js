@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, StyledSection } from "../../GlobslStyles";
+import { Container, StyledSection } from "../../GlobalStyles";
 import { Img, ImgWrapper, InfoRow } from "../InfoSection/InfoSection.elements";
 import {
   Card,

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import styled from "styled-components";
-import { Button, Container, NavLogo } from "../../GlobslStyles";
+import { Button, Container, NavLogo } from "../../GlobalStyles";
 
 import { FaTimes, FaBars } from "react-icons/fa";
 import { StyledHeader } from "./Header";

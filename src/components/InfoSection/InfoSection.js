@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import { Button, Container, StyledSection } from "../../GlobslStyles";
+import { Button, Container, StyledSection } from "../../GlobalStyles";
 import {
   Heading,
   Img,
